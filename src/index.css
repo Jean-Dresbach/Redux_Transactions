@@ -1,0 +1,46 @@
+body {
+  overflow: auto !important;
+  padding: 0 !important;
+}
+
+body,
+#root {
+  height: 100vh;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tagButton:hover span:nth-child(2) {
+  transition: all ease 0.2s;
+  transform: scale(1.1);
+}
+
+.emoji-picker-container em-emoji-picker {
+  width: auto;
+  --border-radius: 0;
+}
+
+.pagination div {
+  padding: 0 !important;
+}
+
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-button {
+  background: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(100%) scale(0.2);
+  }
+  80% {
+    transform: translateY(-15%) scale(1);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
