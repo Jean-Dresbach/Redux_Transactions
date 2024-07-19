@@ -52,8 +52,7 @@ export function Nav() {
           bgcolor: "transparent",
           zIndex: 100
         }}
-        elevation={3}
-      >
+        elevation={3}>
         <BottomNavigation value={value} onChange={handleChange}>
           <BottomNavigationAction
             label="Home"
@@ -68,9 +67,10 @@ export function Nav() {
           />
 
           <BottomNavigationAction
+            disabled
             label="Analytic"
             value={"analytic"}
-            icon={<BarChartRounded />}
+            icon={<BarChartRounded color="disabled" />}
           />
         </BottomNavigation>
       </Paper>
